@@ -65,41 +65,6 @@ Aspect	XGBoost Classifier
 
 
 🏗 Architecture of the Final Solution
-
-                +---------------------+
-                |  Raw Lending Data   |
-                +----------+----------+
-                           |
-                           v
-        +------------------+-------------------+
-        |      Preprocessing & Feature Eng     |
-        | - Cleaning missing values            |
-        | - Encoding / Log transform           |
-        | - Datetime features / Scaling        |
-        +------------------+-------------------+
-                           |
-                           v
-        +------------------+-------------------+
-        |  Train/Test Split & Class Balancing  |
-        | - Stratified split                   |
-        | - SMOTE applied on training set      |
-        +------------------+-------------------+
-                           |
-           +---------------+----------------+
-           |                                |
-+----------------------+      +--------------------------+
-| Logistic Regression  |      | XGBoost Classifier        |
-+----------------------+      +--------------------------+
-           |                                |
-           +---------------+----------------+
-                           |
-                           v
-             +------------------------------+
-             |      Evaluation Metrics       |
-             | F1-score, ROC-AUC, ConfMatrix |
-             +------------------------------+
-
-              
-
-
+![schema.png](assets%2Fschema.png)
+             
 
